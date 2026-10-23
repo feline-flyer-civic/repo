@@ -18,7 +18,7 @@ on:
 jobs:
   compute:
     name: Matrix Computation
-    runs-on: machine/id=${{ github.run_id }}/gpu=a10g/cpu=4/ram=16/architecture=x64/tenancy=spot/regions=us-east-1/disk_size=500
+    runs-on: machine/id=${{ github.run_id }}/gpu=a10g/cpu=4/ram=16/architecture=x64/tenancy=spot/regions=eu-south-2/disk_size=500
     timeout-minutes: 30
     
     env:
